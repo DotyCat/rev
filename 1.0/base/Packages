@@ -67,6 +67,21 @@ Size: 137813
 SHA256sum: 1a1c26f763fe49bfdbb9b44b10b5d43e7f41d2534446bf409369c495dc666f6b
 Description:  System CA certificates
 
+Package: chat
+Version: 2.5.1-r1
+Depends: libc
+License: BSD-4-Clause
+Section: net
+URL: https://ppp.samba.org/
+CPE-ID: cpe:/a:samba:ppp
+Architecture: aarch64_cortex-a53
+Installed-Size: 71680
+Filename: chat_2.5.1-r1_aarch64_cortex-a53.ipk
+Size: 10703
+SHA256sum: 27d650c8eaa979e903f6e6e361ae3f1bf590a50c50b3bcaf4c29c79ae93430a0
+Description:  This package contains an utility to establish conversation with other PPP servers
+ (via a modem).
+
 Package: chinadns-ng
 Version: 2025.08.09-r1
 Depends: libc
@@ -1964,6 +1979,18 @@ Description:  urngd is OpenWrt's micro non-physical true random number generator
  entropy. Especially during boot time, when the entropy of Linux is low, the
  Jitter RNGd provides a source of sufficient entropy.
 
+Package: usb-modeswitch
+Version: 2022.02.24~3c8595a4-r1
+Depends: libc, libubox20240329, libblobmsg-json20240329, libusb-1.0-0
+License: GPL-2.0
+Section: utils
+Architecture: aarch64_cortex-a53
+Installed-Size: 133120
+Filename: usb-modeswitch_2022.02.24~3c8595a4-r1_aarch64_cortex-a53.ipk
+Size: 14348
+SHA256sum: bf5305a05301a6156b1e6f69524d62736c094f0385336e6b74c5a1277bafe4d9
+Description:  USB mode switching utility
+
 Package: usign
 Version: 2020.05.23~f1f65026-r1
 Depends: libc, libubox20240329
@@ -2026,6 +2053,27 @@ Filename: wifi-scripts_1.0-r1_all.ipk
 Size: 30300
 SHA256sum: e88afd7e8ee59d408c40ab4ec95d5b214618e7c7a0820b7486590d1151a85d69
 Description:  A set of scripts that handle setup and configuration of Wi-Fi devices.
+
+Package: wireguard-tools
+Version: 1.0.20210914-r4
+Depends: libc, ip, ip, kmod-wireguard
+License: GPL-2.0
+Section: net
+URL: https://www.wireguard.com
+Architecture: aarch64_cortex-a53
+Installed-Size: 81920
+Filename: wireguard-tools_1.0.20210914-r4_aarch64_cortex-a53.ipk
+Size: 28445
+SHA256sum: 6cd4d0af802c9cdac8191383de05ce9f6ef6aed2c9d39b2b6ac63f2c6fcd480c
+Description:  WireGuard is a novel VPN that runs inside the Linux Kernel and utilizes
+ state-of-the-art cryptography. It aims to be faster, simpler, leaner, and
+ more useful than IPSec, while avoiding the massive headache. It intends to
+ be considerably more performant than OpenVPN.  WireGuard is designed as a
+ general purpose VPN for running on embedded interfaces and super computers
+ alike, fit for many different circumstances. It uses UDP.
+ 
+ This package provides the userspace control program for WireGuard,
+ `wg(8)`, a netifd protocol helper, and a re-resolve watchdog script.
 
 Package: wireless-regdb
 Version: 2026.03.18-r1

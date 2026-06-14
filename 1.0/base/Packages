@@ -177,8 +177,8 @@ URL: https://github.com/snowie2000/geoview
 Architecture: aarch64_cortex-a53
 Installed-Size: 7208960
 Filename: geoview_0.2.6-r1_aarch64_cortex-a53.ipk
-Size: 2742231
-SHA256sum: 89ae41f28526af30f40205960ff58823f3842ae49f99b2481406425d15596b15
+Size: 2742213
+SHA256sum: 20746a9c4ada4f062d1feafe344d645c6eda477f9b758d7391e628a286bae09b
 Description:  geoview is a handy tool to extract useful information from geo* files.
 
 Package: getrandom
@@ -222,19 +222,21 @@ Size: 236855
 SHA256sum: 8a5ea9ad030d37d31351ba5e972f0e3c4ff8bac4bf4741dc00a4d3ecd29d6b1e
 Description:  Routing control utility (full)
 
-Package: ipset
-Version: 7.21-r1
-Depends: libc, kmod-ipt-ipset, libmnl0, libipset13
+Package: ip-tiny
+Version: 6.11.0-r1
+Depends: libc, libnl-tiny1
+Provides: ip
+Alternatives: 200:/sbin/ip:/usr/libexec/ip-tiny
 License: GPL-2.0
 Section: net
-URL: http://ipset.netfilter.org/
-CPE-ID: cpe:/a:netfilter:ipset
+URL: http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Architecture: aarch64_cortex-a53
-Installed-Size: 71680
-Filename: ipset_7.21-r1_aarch64_cortex-a53.ipk
-Size: 2390
-SHA256sum: 150959bd503b8b1efceac2bcec1e48a37e4ce8fe146090c18e4e4568eaf85562
-Description:  IPset administration utility
+Installed-Size: 419840
+Filename: ip-tiny_6.11.0-r1_aarch64_cortex-a53.ipk
+Size: 158209
+SHA256sum: 4f37a9801df1fe10571fb9ea0624011939724452348f1bed9f9cc9b314a567e5
+Description:  Routing control utility (minimal)
 
 Package: ipt2socks
 Version: 1.1.4-r3
@@ -461,22 +463,6 @@ Size: 222880
 SHA256sum: 08d21110917c854a75cdd85dac7925213dc51a38d99d3dbe42d82e1f95d31251
 Description:  GMP is a free library for arbitrary precision arithmetic, operating on
  signed integers, rational numbers, and floating point numbers.
-
-Package: libipset13
-Version: 7.21-r1
-Depends: libc, kmod-ipt-ipset, libmnl0
-Provides: libipset
-License: GPL-2.0
-Section: net
-URL: http://ipset.netfilter.org/
-ABIVersion: 13
-CPE-ID: cpe:/a:netfilter:ipset
-Architecture: aarch64_cortex-a53
-Installed-Size: 256000
-Filename: libipset13_7.21-r1_aarch64_cortex-a53.ipk
-Size: 52555
-SHA256sum: 2e19a6b3a4b6e486560f46a64d3781612095045d299a49070d62d015c0c02929
-Description:  IPset administration utility
 
 Package: libiwinfo-data
 Version: 2024.10.20~b94f066e-r1
@@ -814,22 +800,6 @@ Size: 115920
 SHA256sum: 96214a68fbe011fa58538caea406000b8a0da16dd4c82e4dde2a22372329d19b
 Description:  A Perl Compatible Regular Expression library
 
-Package: libpopt0
-Version: 1.19-r1
-Depends: libc
-Provides: libpopt
-License: MIT
-Section: libs
-URL: https://github.com/rpm-software-management/popt
-ABIVersion: 0
-CPE-ID: cpe:/a:popt_project:popt
-Architecture: aarch64_cortex-a53
-Installed-Size: 71680
-Filename: libpopt0_1.19-r1_aarch64_cortex-a53.ipk
-Size: 20577
-SHA256sum: 9bb02293231a84aa095ec6889757706446bd1b3c0b8cdb110030b2a2724078b8
-Description:  A command line option parsing library
-
 Package: libreadline8
 Version: 8.2-r2
 Depends: libc, libncursesw6
@@ -1110,6 +1080,19 @@ Size: 2470
 SHA256sum: cfe2b2867a060d49e5c34734df1ebaec1604ddb00f9f215f2e0358549beb0061
 Description:  LuCI for CPU Freq Setting
 
+Package: luci-app-doty-status
+Version: 1.0-r2
+Depends: libc, luci-base, vnstat2, curl, luci-app-filemanager, luci-app-doty, luci-lua-runtime
+License: GPL-3.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 317440
+Filename: luci-app-doty-status_1.0-r2_all.ipk
+Size: 93992
+SHA256sum: 26623350de619b153763b058d818c36926f9043417de795f88e05daba3499e6e
+Description:  Combined Live Status, vnStat and Quick Toggle status center for OpenWrt
+
 Package: luci-app-doty
 Version: 1.1-r1
 Depends: libc, luci-base, rpcd, sms-tool, jq, wget-ssl, ca-bundle, unzip
@@ -1121,19 +1104,6 @@ Filename: luci-app-doty_1.1-r1_all.ipk
 Size: 36189
 SHA256sum: 92f71280de65cf876c2a1f7eaa705174cd55bf8eac9bfcbad11817c3a7fd83e1
 Description:  Modem information, AT command, SMS station, TTL, AW1K LED, ProjectX and IMEI tools for LuCI.
-
-Package: luci-app-netstat
-Version: 1.3-r3
-Depends: libc, vnstat2, curl, luci-app-filemanager, luci-lua-runtime
-License: GPL-3.0
-Section: luci
-URL: https://github.com/openwrt/luci
-Architecture: all
-Installed-Size: 286720
-Filename: luci-app-netstat_1.3-r3_all.ipk
-Size: 88836
-SHA256sum: 5f3d2c40f310dc267ece9fdd0a521e31658ac5fffdcbb7d10aae9958bd9689c4
-Description:  Net statistics and monitoring for OpenWrt
 
 Package: luci-app-openclash
 Version: 0.47.097
@@ -1152,10 +1122,10 @@ Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, ip-full, libu
 Section: luci
 URL: https://github.com/openwrt/luci
 Architecture: all
-Installed-Size: 1249280
+Installed-Size: 1372160
 Filename: luci-app-passwall2_26.6.3-r1_all.ipk
-Size: 317351
-SHA256sum: 17ba6da666da059738847dcb3092554fc8971e42d0b0a4b9706354280f8d017a
+Size: 338624
+SHA256sum: 603789d43515d745627fa8797192a3e39ba423535e0b7247fcea3d0e01b21af5
 Description:  LuCI support for PassWall 2
 
 Package: luci-app-passwall
@@ -1164,10 +1134,10 @@ Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, chinadns-ng, 
 Section: luci
 URL: https://github.com/openwrt/luci
 Architecture: all
-Installed-Size: 3051520
+Installed-Size: 3184640
 Filename: luci-app-passwall_26.6.2-r1_all.ipk
-Size: 836762
-SHA256sum: b30425b4878db812292a4a2dc7382c62462e5d2916019f7a0568a3d673c12c53
+Size: 861134
+SHA256sum: afbbf72815e76724c8c6b2df3bd94b6feee7a22e6987518e0743ada0609466ac
 Description:  LuCI support for PassWall
 
 Package: luci-app-qmodem
@@ -1179,8 +1149,8 @@ URL: https://github.com/openwrt/luci
 Architecture: all
 Installed-Size: 112640
 Filename: luci-app-qmodem_2.8.9-r2_all.ipk
-Size: 21113
-SHA256sum: dcf98b1c68a075bbe55cc6b9fdd8e0098fe8d254cc032525f04cddfceaced5cc
+Size: 22457
+SHA256sum: d5932dbbb538d665bf792d7f48cb34b8bac7bf6ca073038524674221b06a3243
 Description:  LuCI support for QWRT Modem
 
 Package: luci-app-ramfree
@@ -1194,18 +1164,6 @@ Filename: luci-app-ramfree_0.260607.48962_all.ipk
 Size: 1508
 SHA256sum: 0e276bbb5b09d8e45721b176a7c944ccff82394c64feb3377f7db84810ade0a6
 Description:  LuCI support for RAM free
-
-Package: luci-app-toggel
-Version: 1.0-r4
-Depends: libc, luci-base, luci-app-doty
-Section: luci
-URL: https://github.com/openwrt/luci
-Architecture: all
-Installed-Size: 40960
-Filename: luci-app-toggel_1.0-r4_all.ipk
-Size: 6611
-SHA256sum: 5e6a1def135e9d19e64d1088baee61853349205b8c7bf7ec9d79b6980b2af6cc
-Description:  LuCI Quick Toggel
 
 Package: luci-app-ttyd
 Version: 0.260609.05994
@@ -1487,8 +1445,8 @@ Section: QCA
 Architecture: aarch64_cortex-a53
 Installed-Size: 1198080
 Filename: qca-ssdk-shell_12.5.2024.12.17~a2b7be2-r4_aarch64_cortex-a53.ipk
-Size: 252253
-SHA256sum: 0fa0b4701ed9e022b6cd909a6c46144c91913bb5500d26b36a4244033ee04890
+Size: 252453
+SHA256sum: 01b59a224140afc751616e6175b938693874229378bf63adc32b8215a196791f
 Description:  Shell application for QCA SSDK
 
 Package: qfirehose
@@ -1606,6 +1564,45 @@ SHA256sum: db500b43dee256a684a58d9a01eb71289349ebc59d7885072abc001742f63a3c
 Description:  This package provides the UBUS RPC backend server to expose various
  functionality to frontend programs via JSON-RPC.
 
+Package: shadowsocks-rust-sslocal
+Version: 1.24.0-r1
+Depends: libc
+License: MIT
+Section: net
+URL: https://github.com/shadowsocks/shadowsocks-rust
+Architecture: aarch64_cortex-a53
+Installed-Size: 7362560
+Filename: shadowsocks-rust-sslocal_1.24.0-r1_aarch64_cortex-a53.ipk
+Size: 3609072
+SHA256sum: 7737b3296d82c7fcbf067b6f26f1f01aeeb8616c9533f97ad87a0b0877645ef7
+Description:  shadowsocks-rust sslocal
+
+Package: shadowsocksr-libev-ssr-local
+Version: 2.5.6-r11
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib
+License: GPL-3.0
+Section: net
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: aarch64_cortex-a53
+Installed-Size: 204800
+Filename: shadowsocksr-libev-ssr-local_2.5.6-r11_aarch64_cortex-a53.ipk
+Size: 63620
+SHA256sum: af367d06f6cb159298c45d9198ca161a6cc1fa273d34bf7b09efc3911ba5a0d1
+Description:  shadowsocksr-libev ssr-local
+
+Package: shadowsocksr-libev-ssr-redir
+Version: 2.5.6-r11
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib
+License: GPL-3.0
+Section: net
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: aarch64_cortex-a53
+Installed-Size: 143360
+Filename: shadowsocksr-libev-ssr-redir_2.5.6-r11_aarch64_cortex-a53.ipk
+Size: 57095
+SHA256sum: 4c1d0b4c43880fc76ac9bdd3df4bde2aa59623f3c3098b92447ada8c20083825
+Description:  shadowsocksr-libev ssr-redir
+
 Package: shellsync
 Version: 0.2-r1
 Depends: libc, libpthread
@@ -1640,8 +1637,8 @@ URL: https://sing-box.sagernet.org/
 Architecture: aarch64_cortex-a53
 Installed-Size: 45475840
 Filename: sing-box_1.13.13-r1_aarch64_cortex-a53.ipk
-Size: 16037531
-SHA256sum: 8654960fbe6c55efb5558a4baf35d548ddd84a258621a1d57e71ea5d1efa9cd2
+Size: 16037030
+SHA256sum: 2a9abddd597f8b3a49f8b9f0bbb7d4d0285f3be136c87d68edfd388b206ca3cf
 Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
@@ -2014,8 +2011,8 @@ URL: https://github.com/teddysun/v2ray-plugin
 Architecture: aarch64_cortex-a53
 Installed-Size: 16261120
 Filename: v2ray-plugin_5.49.0-r1_aarch64_cortex-a53.ipk
-Size: 5967363
-SHA256sum: a9531dc92a9235e35963761288b7cd52882fa0f7c9cc2069858a3353d2c90ba2
+Size: 5967234
+SHA256sum: c9a5d5a4e27f465d45edd4fd29d5973946ff498b1a737d3976e84608028511c2
 Description:  SIP003 plugin for shadowsocks, based on v2ray
 
 Package: wifi-scripts
@@ -2029,27 +2026,6 @@ Filename: wifi-scripts_1.0-r1_all.ipk
 Size: 30300
 SHA256sum: e88afd7e8ee59d408c40ab4ec95d5b214618e7c7a0820b7486590d1151a85d69
 Description:  A set of scripts that handle setup and configuration of Wi-Fi devices.
-
-Package: wireguard-tools
-Version: 1.0.20210914-r4
-Depends: libc, ip, ip, kmod-wireguard
-License: GPL-2.0
-Section: net
-URL: https://www.wireguard.com
-Architecture: aarch64_cortex-a53
-Installed-Size: 81920
-Filename: wireguard-tools_1.0.20210914-r4_aarch64_cortex-a53.ipk
-Size: 28445
-SHA256sum: 6cd4d0af802c9cdac8191383de05ce9f6ef6aed2c9d39b2b6ac63f2c6fcd480c
-Description:  WireGuard is a novel VPN that runs inside the Linux Kernel and utilizes
- state-of-the-art cryptography. It aims to be faster, simpler, leaner, and
- more useful than IPSec, while avoiding the massive headache. It intends to
- be considerably more performant than OpenVPN.  WireGuard is designed as a
- general purpose VPN for running on embedded interfaces and super computers
- alike, fit for many different circumstances. It uses UDP.
- 
- This package provides the userspace control program for WireGuard,
- `wg(8)`, a netifd protocol helper, and a re-resolve watchdog script.
 
 Package: wireless-regdb
 Version: 2026.03.18-r1
@@ -2102,8 +2078,8 @@ URL: https://xtls.github.io
 Architecture: aarch64_cortex-a53
 Installed-Size: 30986240
 Filename: xray-core_26.6.1-r1_aarch64_cortex-a53.ipk
-Size: 11021270
-SHA256sum: 12f748ccc821b3b840b9e229ad1bb45715383b146e37cfe2fe3a5ba9f2839c9c
+Size: 11023069
+SHA256sum: ffd88b34bc62d745f042d9a212afc7547bf0d1d938087574efd5fb9d8dee8d8a
 Description:  Xray, Penetrates Everything. It helps you to build your own computer network.
  It secures your network connections and thus protects your privacy.
 

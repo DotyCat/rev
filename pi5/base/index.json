@@ -78,6 +78,7 @@
     "luci-app-passwall": "26.6.2-r1",
     "luci-app-qfirehose": "2.1.0-r1",
     "luci-app-qmodem": "3.0.2-r0",
+    "luci-app-turboacc": "0.260614.59795",
     "luci-theme-argon": "2.3.2-r20250207",
     "microsocks": "1.0.5-r2",
     "mkf2fs": "1.16.0-r3",

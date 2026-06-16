@@ -121,6 +121,7 @@
     "kmod-spi-bcm2835": "6.6.133-r1",
     "kmod-spi-dw-mmio": "6.6.133-r1",
     "kmod-spi-dw": "6.6.133-r1",
+    "kmod-tcp-bbr": "6.6.133-r1",
     "kmod-thermal": "6.6.133-r1",
     "kmod-tun": "6.6.133-r1",
     "kmod-usb-acm": "6.6.133-r1",

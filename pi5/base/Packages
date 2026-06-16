@@ -1148,6 +1148,19 @@ Size: 23148
 SHA256sum: 49d78a0ed32f50c5bf8ab80607472690b6f00352fe65b76b2e41e57e53e3cf0d
 Description:  LuCI support for QWRT Modem
 
+Package: luci-app-turboacc
+Version: 0.260614.59795
+Depends: libc, kmod-nft-offload, kmod-tcp-bbr, kmod-nft-fullcone
+License: GPL-3.0-only
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 40960
+Filename: luci-app-turboacc_0.260614.59795_all.ipk
+Size: 6520
+SHA256sum: 2762ea9c1a32c097eed00737b9c416d407c8c01b41e5c331068b8ae1747ff2e5
+Description:  LuCI support for FastPath (FW3 or FW4)
+
 Package: luci-theme-argon
 Version: 2.3.2-r20250207
 Depends: libc, curl, jsonfilter, luci-lua-runtime

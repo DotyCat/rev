@@ -73,7 +73,7 @@
     "lua": "5.1.5-r11",
     "luci-app-argon-config": "26.148.24177~a5534e3",
     "luci-app-cpufreq": "0.260607.48945",
-    "luci-app-doty-status": "1.0-r2",
+    "luci-app-doty-status": "1.0-r4",
     "luci-app-doty": "1.1-r1",
     "luci-app-openclash": "0.47.097",
     "luci-app-passwall2": "26.6.3-r1",

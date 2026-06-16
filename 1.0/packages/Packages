@@ -1389,8 +1389,8 @@ Section: kernel
 Architecture: aarch64_cortex-a53
 Installed-Size: 92160
 Filename: kmod-qca-nss-crypto_6.6.141.12.5.2024.09.16~60e27b9-r1_aarch64_cortex-a53.ipk
-Size: 24789
-SHA256sum: a0046c6006dd0968bba77e17c97867244d654cea09609737960909e6e4116ec8
+Size: 24791
+SHA256sum: f57212f73132d510e12474725c8f802d1d16ccc95bff2d1861e7d096fd2b4457
 Description:  Kernel driver for NSS crypto driver
 
 Package: kmod-qca-nss-dp
@@ -1510,8 +1510,8 @@ Section: kernel
 Architecture: aarch64_cortex-a53
 Installed-Size: 102400
 Filename: kmod-qca-nss-drv-netlink_6.6.141.11.4.0.5.2021.08.17~c4049d1-r8_aarch64_cortex-a53.ipk
-Size: 21977
-SHA256sum: 87bb5f16102a13781fe8ac05fdf20614f871235a3d72b4d42dea8afdb727baa1
+Size: 21984
+SHA256sum: 6c74ec413295c4e29c110d712c6f3811e1566055bb31e4d7cdb25b47b51e1e93
 Description:  NSS NETLINK manager for QCA NSS driver
 
 Package: kmod-qca-nss-drv-pppoe
@@ -1577,8 +1577,8 @@ Section: kernel
 Architecture: aarch64_cortex-a53
 Installed-Size: 51200
 Filename: kmod-qca-nss-drv-vlan-mgr_6.6.141.11.4.0.5.2021.08.17~c4049d1-r8_aarch64_cortex-a53.ipk
-Size: 12660
-SHA256sum: bf27f83fe3bd165791f9025fd0414179b03603193c5e8ec22fbb69e8288185f9
+Size: 12667
+SHA256sum: 6e5bca51df4a31fac8986b74ead85b64ca0d87af1b9de19a5b60b4aae9b902c5
 Description:  Kernel driver for NSS vlan manager
 
 Package: kmod-qca-nss-drv-vxlanmgr
@@ -1621,8 +1621,8 @@ Section: kernel
 Architecture: aarch64_cortex-a53
 Installed-Size: 1628160
 Filename: kmod-qca-ssdk_6.6.141.2024.06.13~c451136b-r3_aarch64_cortex-a53.ipk
-Size: 348676
-SHA256sum: 19fc61b69395a196eb1386fb29b25972f5dd812dfc9e344280075a9dfe359b0c
+Size: 348637
+SHA256sum: 764faf6cfc6cf660d87fd260677e710bd1a120406fa9d266a358602992bf0d27
 Description:  Qualcom SSDK switch driver
 
 Package: kmod-qcom-qmi-helpers

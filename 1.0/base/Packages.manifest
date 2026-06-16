@@ -254,8 +254,8 @@ Maintainer: snowie2000
 Architecture: aarch64_cortex-a53
 Installed-Size: 7208960
 Filename: geoview_0.2.6-r1_aarch64_cortex-a53.ipk
-Size: 2742213
-SHA256sum: 20746a9c4ada4f062d1feafe344d645c6eda477f9b758d7391e628a286bae09b
+Size: 2742231
+SHA256sum: 89ae41f28526af30f40205960ff58823f3842ae49f99b2481406425d15596b15
 Description:  geoview is a handy tool to extract useful information from geo* files.
 
 Package: getrandom
@@ -1398,7 +1398,7 @@ SHA256sum: cfe2b2867a060d49e5c34734df1ebaec1604ddb00f9f215f2e0358549beb0061
 Description:  LuCI for CPU Freq Setting
 
 Package: luci-app-doty-status
-Version: 1.0-r2
+Version: 1.0-r4
 Depends: libc, luci-base, vnstat2, curl, luci-app-filemanager, luci-app-doty, luci-lua-runtime
 Source: feeds/base/custom/doty/luci-app-doty-status
 SourceName: luci-app-doty-status
@@ -1408,10 +1408,10 @@ SourceDateEpoch: 1780852089
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 317440
-Filename: luci-app-doty-status_1.0-r2_all.ipk
-Size: 93992
-SHA256sum: 26623350de619b153763b058d818c36926f9043417de795f88e05daba3499e6e
+Installed-Size: 327680
+Filename: luci-app-doty-status_1.0-r4_all.ipk
+Size: 94514
+SHA256sum: 2071221cdf792ff7846c827e4167b7b9a249a8c21cd282f0b2f1a6a9f34bbf8f
 Description:  Combined Live Status, vnStat and Quick Toggle status center for OpenWrt
 
 Package: luci-app-doty
@@ -1878,8 +1878,8 @@ SourceDateEpoch: 1780852089
 Architecture: aarch64_cortex-a53
 Installed-Size: 1198080
 Filename: qca-ssdk-shell_12.5.2024.12.17~a2b7be2-r4_aarch64_cortex-a53.ipk
-Size: 252453
-SHA256sum: 01b59a224140afc751616e6175b938693874229378bf63adc32b8215a196791f
+Size: 252363
+SHA256sum: 807eb7776621a27578bd63835f2714a7840e38eac6b7f789585d67ee3b518d10
 Description:  Shell application for QCA SSDK
 
 Package: qfirehose
@@ -2042,8 +2042,8 @@ Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_cortex-a53
 Installed-Size: 7362560
 Filename: shadowsocks-rust-sslocal_1.24.0-r1_aarch64_cortex-a53.ipk
-Size: 3609072
-SHA256sum: 7737b3296d82c7fcbf067b6f26f1f01aeeb8616c9533f97ad87a0b0877645ef7
+Size: 3609051
+SHA256sum: 2a8f58f45ae75e7709aab2eb08e31a40ee4bc915e1e7cdba0150034dac099321
 Description:  shadowsocks-rust sslocal
 
 Package: shadowsocksr-libev-ssr-local
@@ -2128,8 +2128,8 @@ Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_cortex-a53
 Installed-Size: 45475840
 Filename: sing-box_1.13.13-r1_aarch64_cortex-a53.ipk
-Size: 16037030
-SHA256sum: 2a9abddd597f8b3a49f8b9f0bbb7d4d0285f3be136c87d68edfd388b206ca3cf
+Size: 16037531
+SHA256sum: 8654960fbe6c55efb5558a4baf35d548ddd84a258621a1d57e71ea5d1efa9cd2
 Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
@@ -2631,8 +2631,8 @@ Maintainer: madeye <max.c.lv@gmail.com>
 Architecture: aarch64_cortex-a53
 Installed-Size: 16261120
 Filename: v2ray-plugin_5.49.0-r1_aarch64_cortex-a53.ipk
-Size: 5967234
-SHA256sum: c9a5d5a4e27f465d45edd4fd29d5973946ff498b1a737d3976e84608028511c2
+Size: 5967363
+SHA256sum: a9531dc92a9235e35963761288b7cd52882fa0f7c9cc2069858a3353d2c90ba2
 Description:  SIP003 plugin for shadowsocks, based on v2ray
 
 Package: wifi-scripts
@@ -2747,8 +2747,8 @@ Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_cortex-a53
 Installed-Size: 30986240
 Filename: xray-core_26.6.1-r1_aarch64_cortex-a53.ipk
-Size: 11023069
-SHA256sum: ffd88b34bc62d745f042d9a212afc7547bf0d1d938087574efd5fb9d8dee8d8a
+Size: 11021270
+SHA256sum: 12f748ccc821b3b840b9e229ad1bb45715383b146e37cfe2fe3a5ba9f2839c9c
 Description:  Xray, Penetrates Everything. It helps you to build your own computer network.
  It secures your network connections and thus protects your privacy.
 

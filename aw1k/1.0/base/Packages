@@ -1054,8 +1054,8 @@ Section: luci
 Architecture: all
 Installed-Size: 204800
 Filename: luci-app-doty_1.2-r5_all.ipk
-Size: 37614
-SHA256sum: c5aeff7e45a027485ef32945d84d806a1dd28911d116cb8ba81bf5dd7d0df26c
+Size: 37633
+SHA256sum: de04516eb3b015529e8fc55d687aab5e16cafc1c0e428428a2becd99dbfe89c2
 Description:  Modem information, AT command, SMS station, TTL and IMEI tools for LuCI.
 
 Package: luci-app-openclash
@@ -1985,8 +1985,8 @@ Section: QCA
 Architecture: aarch64_cortex-a53
 Installed-Size: 1198080
 Filename: qca-ssdk-shell_12.5.2024.12.17~a2b7be2-r4_aarch64_cortex-a53.ipk
-Size: 252349
-SHA256sum: 80ccb44cd162ac60f8c6a3e155c462e8f69763f78412f75c9977f065efe6f5d5
+Size: 252333
+SHA256sum: a6981e62ca4f79780f0554f5c8c474218086228b6e5070d4f80bfc7228b74fda
 Description:  Shell application for QCA SSDK
 
 Package: qfirehose
@@ -2109,8 +2109,8 @@ URL: https://github.com/shadowsocks/shadowsocks-rust
 Architecture: aarch64_cortex-a53
 Installed-Size: 7362560
 Filename: shadowsocks-rust-sslocal_1.24.0-r1_aarch64_cortex-a53.ipk
-Size: 3608926
-SHA256sum: 739f221127ba5796d02918d41d3d75d82fae035fb854e77c4287c208b75b9ba4
+Size: 3608937
+SHA256sum: cab9f0ed6bd8f3653e183db13cb123d142740fdc3eedeb965d547a6560436008
 Description:  shadowsocks-rust sslocal
 
 Package: shadowsocksr-libev-ssr-local

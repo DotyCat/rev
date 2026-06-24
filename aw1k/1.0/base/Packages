@@ -1088,7 +1088,7 @@ Section: luci
 URL: https://github.com/openwrt/luci
 Architecture: all
 Installed-Size: 3184640
-Filename: luci-app-passwall_26.6.2-r1_all.ipk
+Filename: luci-app-passwall_26.6.2-r4_all.ipk
 Size: 861157
 SHA256sum: 1dcf277e19aa12c4101531ea86994c3855319cd54054abad3231a2ad8a4b00d5
 Description:  LuCI support for PassWall

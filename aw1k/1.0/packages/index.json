@@ -156,6 +156,7 @@
     "kmod-usb-xhci-hcd": "6.6.133-r1",
     "kmod-usb2": "6.6.133-r1",
     "kmod-usb3": "6.6.133-r1",
+    "kmod-usbmon": "6.6.133-r1",
     "kmod-vxlan": "6.6.133-r1",
     "kmod-zram": "6.6.133-r1",
     "libatomic": "13.3.0-r4",

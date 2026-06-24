@@ -67,20 +67,6 @@ Size: 269738
 SHA256sum: 3b71086d4e4d0125f16db13ea5fa69c7218b2f4df39c47a2f5173a4bbe8d6fd8
 Description:  ChinaDNS next generation, refactoring with epoll and ipset.
 
-Package: debugfs
-Version: 1.47.0-r2
-Depends: libc, e2fsprogs
-License: GPL-2.0
-Section: utils
-URL: http://e2fsprogs.sourceforge.net/
-CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
-Architecture: aarch64_cortex-a53
-Installed-Size: 215040
-Filename: debugfs_1.47.0-r2_aarch64_cortex-a53.ipk
-Size: 72899
-SHA256sum: 04f339ab0f0c9d690cceb54a4865dba65e10ffb66b2ff085d248a18d98a6a034
-Description:  Ext2 Filesystem debugger
-
 Package: dns2socks
 Version: 2.1-r2
 Depends: libc, libpthread
@@ -1054,10 +1040,10 @@ License: GPL-3.0
 Section: luci
 URL: https://github.com/openwrt/luci
 Architecture: all
-Installed-Size: 317440
+Installed-Size: 327680
 Filename: luci-app-doty-status_1.0-r4_all.ipk
-Size: 94314
-SHA256sum: 498f7921a1d0fe741f90ef750753f22ed367c046ba286109a257f43ead2c8880
+Size: 94508
+SHA256sum: 9c371a3da5b47593543c2616026e104e3707afdf84f1422a5c16aafa3f691465
 Description:  Combined Live Status, vnStat and Quick Toggle status center for OpenWrt
 
 Package: luci-app-doty
@@ -1096,41 +1082,28 @@ SHA256sum: 57997853a8650278d68011a51fe30b605de18bfbcc5219c191b9b7c3ba5b14ea
 Description:  LuCI support for PassWall 2
 
 Package: luci-app-passwall
-Version: 26.6.2-r4
-Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, chinadns-ng, dns2socks, dns2tcp, dnsmasq-full, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, microsocks, resolveip, tcping, lyaml, kmod-nft-socket, kmod-nft-tproxy, luci-lua-runtime
+Version: 26.6.2-r1
+Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, chinadns-ng, dns2socks, dnsmasq-full, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, microsocks, resolveip, tcping, lyaml, luci-lua-runtime
 Section: luci
 URL: https://github.com/openwrt/luci
 Architecture: all
-Installed-Size: 3215360
-Filename: luci-app-passwall_26.6.2-r4_all.ipk
-Size: 863914
-SHA256sum: 4eccced6e25900fc66914dc86f5abfdeb6fd2d55952c6cdcef358d7a95bc9919
+Installed-Size: 3184640
+Filename: luci-app-passwall_26.6.2-r1_all.ipk
+Size: 861157
+SHA256sum: 1dcf277e19aa12c4101531ea86994c3855319cd54054abad3231a2ad8a4b00d5
 Description:  LuCI support for PassWall
 
-Package: luci-app-projectx
-Version: 1.4-r1
-Depends: libc, luci-base, rpcd, wget-ssl, ca-bundle, unzip
-License: GPL-3.0
-Section: luci
-URL: https://github.com/openwrt/luci
-Architecture: all
-Installed-Size: 51200
-Filename: luci-app-projectx_1.4-r1_all.ipk
-Size: 9180
-SHA256sum: aea2aa44ffa4ccc2f053893f81b48cfd00790b6b8b24557f588fbf4e2fbf8c16
-Description:  LuCI luci-app-projectx app
-
 Package: luci-app-qfirehose
-Version: 2.1.0-r2
-Depends: libc, luci-base, cgi-io, qfirehose, sms-tool, kmod-usbmon, debugfs
+Version: 2.1.0-r1
+Depends: libc, luci-base, cgi-io, qfirehose, sms-tool
 License: GPLv3
 Section: luci
 URL: https://github.com/openwrt/luci
 Architecture: all
 Installed-Size: 92160
-Filename: luci-app-qfirehose_2.1.0-r2_all.ipk
-Size: 14018
-SHA256sum: b99d422596a661fad67a4794a25d8818d2b6037befca59a0d637474a1ca1c1cf
+Filename: luci-app-qfirehose_2.1.0-r1_all.ipk
+Size: 12877
+SHA256sum: 7f2eff5b9c737958c975be56b136fdc2921ab32f652b10b964c065af4ff52101
 Description:  Web interface for QFirehose, a tool for flashing Qualcomm firmware on OpenWrt
 
 Package: luci-app-qmlite
@@ -1170,6 +1143,17 @@ Filename: luci-app-ttyd_0.260609.05994_all.ipk
 Size: 3130
 SHA256sum: 700e976459355e744559b43445a36e2a2f082f99f822b503147d507f281b21e7
 Description:  ttyd - Command-line tool for sharing terminal over the web
+
+Package: luci-i18n-passwall-zh-cn
+Version: 26.6.2
+Depends: libc, luci-app-passwall
+Section: luci
+Architecture: all
+Installed-Size: 51200
+Filename: luci-i18n-passwall-zh-cn_26.6.2_all.ipk
+Size: 17781
+SHA256sum: e55c81d97348faf7062f0821fee20a274cf791f149d21fbbe5d20097c08ed507
+Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall2-fa
 Version: 26.6.3
@@ -1216,111 +1200,111 @@ SHA256sum: 6c8edfddbf3b3a188085ad9b87c2699ea71f4bf2036202e61b2337d0ddd5d4aa
 Description:  Translation for luci-app-passwall2 - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-qfirehose-de
-Version: 0.260623.20150
+Version: 0.260518.50660
 Depends: libc, luci-app-qfirehose
 License: GPLv3
 Section: luci
 Architecture: all
 Installed-Size: 10240
-Filename: luci-i18n-qfirehose-de_0.260623.20150_all.ipk
+Filename: luci-i18n-qfirehose-de_0.260518.50660_all.ipk
 Size: 2989
-SHA256sum: bf3b2295e8caf9bcbe94860dfd9963935576c20b11e0db3189c79821c8a405e4
+SHA256sum: 28a5b60843bc90eff2c52d854cd5b48ac566fa2fc30205cd54c7840435cb1a29
 Description:  Translation for luci-app-qfirehose - Deutsch (German)
 
 Package: luci-i18n-qfirehose-es
-Version: 0.260623.20150
+Version: 0.260518.50660
 Depends: libc, luci-app-qfirehose
 License: GPLv3
 Section: luci
 Architecture: all
 Installed-Size: 10240
-Filename: luci-i18n-qfirehose-es_0.260623.20150_all.ipk
-Size: 2942
-SHA256sum: 3447819406934014efb9e0cb5372357030d95d991d1537490637b4f88b01cb7a
+Filename: luci-i18n-qfirehose-es_0.260518.50660_all.ipk
+Size: 2945
+SHA256sum: e8d3dc2456e8d7edf4308efd77ce813f139720a35e4bd19ac105cf39e57922b4
 Description:  Translation for luci-app-qfirehose - Español (Spanish)
 
 Package: luci-i18n-qfirehose-fr
-Version: 0.260623.20150
+Version: 0.260518.50660
 Depends: libc, luci-app-qfirehose
 License: GPLv3
 Section: luci
 Architecture: all
 Installed-Size: 20480
-Filename: luci-i18n-qfirehose-fr_0.260623.20150_all.ipk
-Size: 3007
-SHA256sum: 3e73f2954c03a9d61ce66ac1f1cdc389fe783f0a9c04e6b53642eebaa14708c3
+Filename: luci-i18n-qfirehose-fr_0.260518.50660_all.ipk
+Size: 3008
+SHA256sum: 1ccfec2cef67b86e7a35bf4213b0eb7e5892126ac5f9dec3391d0f606254ff49
 Description:  Translation for luci-app-qfirehose - Français (French)
 
 Package: luci-i18n-qfirehose-it
-Version: 0.260623.20150
+Version: 0.260518.50660
 Depends: libc, luci-app-qfirehose
 License: GPLv3
 Section: luci
 Architecture: all
 Installed-Size: 10240
-Filename: luci-i18n-qfirehose-it_0.260623.20150_all.ipk
+Filename: luci-i18n-qfirehose-it_0.260518.50660_all.ipk
 Size: 2949
-SHA256sum: 4295c9d81da58856355f68a5025e7def0331431f335b59b476ed7eeeb505d633
+SHA256sum: fdeaf32b2bc27e8279cbb568ed1887911db5f8a2fac507df15ddc14bd8e5d3b0
 Description:  Translation for luci-app-qfirehose - Italiano (Italian)
 
 Package: luci-i18n-qfirehose-pl
-Version: 0.260623.20150
+Version: 0.260518.50660
 Depends: libc, luci-app-qfirehose
 License: GPLv3
 Section: luci
 Architecture: all
 Installed-Size: 10240
-Filename: luci-i18n-qfirehose-pl_0.260623.20150_all.ipk
-Size: 2958
-SHA256sum: 4f16eedb7e3661c4e936ec0ce9c69aaa526afba21d78ec071d5788ebd89edaab
+Filename: luci-i18n-qfirehose-pl_0.260518.50660_all.ipk
+Size: 2956
+SHA256sum: eadab876cc7d9ffbbc1a3cec14c1e4414650307080f9c41f5d621dd4a98b4057
 Description:  Translation for luci-app-qfirehose - Polski (Polish)
 
 Package: luci-i18n-qfirehose-ru
-Version: 0.260623.20150
+Version: 0.260518.50660
 Depends: libc, luci-app-qfirehose
 License: GPLv3
 Section: luci
 Architecture: all
 Installed-Size: 20480
-Filename: luci-i18n-qfirehose-ru_0.260623.20150_all.ipk
-Size: 3296
-SHA256sum: bd67ca10ea1642e19585e3af7cd9081fafe936a481aed2ca320d697956a7912d
+Filename: luci-i18n-qfirehose-ru_0.260518.50660_all.ipk
+Size: 3293
+SHA256sum: 3d894e9315c01ce2f89ebb3fb6b9dfe76807bb80eb091902cd057868b88a1b61
 Description:  Translation for luci-app-qfirehose - Русский (Russian)
 
 Package: luci-i18n-qfirehose-vi
-Version: 0.260623.20150
+Version: 0.260518.50660
 Depends: libc, luci-app-qfirehose
 License: GPLv3
 Section: luci
 Architecture: all
 Installed-Size: 20480
-Filename: luci-i18n-qfirehose-vi_0.260623.20150_all.ipk
-Size: 3038
-SHA256sum: 557f771d51060eee8883fb060de38bb5a63e29ebec5569549bdae859edfcd4bb
+Filename: luci-i18n-qfirehose-vi_0.260518.50660_all.ipk
+Size: 3035
+SHA256sum: 3fcb7ebcae9405fc0ff06adac55d431304037f29ffca3d1b4a47f6e75763c87e
 Description:  Translation for luci-app-qfirehose - Tiếng Việt (Vietnamese)
 
 Package: luci-i18n-qfirehose-zh-cn
-Version: 0.260623.20150
+Version: 0.260518.50660
 Depends: libc, luci-app-qfirehose
 License: GPLv3
 Section: luci
 Architecture: all
 Installed-Size: 10240
-Filename: luci-i18n-qfirehose-zh-cn_0.260623.20150_all.ipk
-Size: 2866
-SHA256sum: 7e59e2e63ab2b390ad86d4ac130e5e873c8d3093310bea421b5bd9fec1ae9215
+Filename: luci-i18n-qfirehose-zh-cn_0.260518.50660_all.ipk
+Size: 2870
+SHA256sum: ab9b1219f41cba20f1b94dd74134882247010ca10b603097f278cb94473e7bac
 Description:  Translation for luci-app-qfirehose - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-qfirehose-zh-tw
-Version: 0.260623.20150
+Version: 0.260518.50660
 Depends: libc, luci-app-qfirehose
 License: GPLv3
 Section: luci
 Architecture: all
 Installed-Size: 10240
-Filename: luci-i18n-qfirehose-zh-tw_0.260623.20150_all.ipk
-Size: 2917
-SHA256sum: e9ef81840ebd4b4bcb1fa9fc1e09de2abe5725f5ceabff369460f9667ab34ac0
+Filename: luci-i18n-qfirehose-zh-tw_0.260518.50660_all.ipk
+Size: 2918
+SHA256sum: 93117b59fd8c556540bce825575ce90c49f5c3d75f3f0c7c2ed3c035d1357210
 Description:  Translation for luci-app-qfirehose - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-ramfree-zh-cn
@@ -1800,8 +1784,8 @@ URL: http://www.remlab.net/ndisc6/
 Architecture: aarch64_cortex-a53
 Installed-Size: 71680
 Filename: ndisc6_1.0.2-r1_aarch64_cortex-a53.ipk
-Size: 6147
-SHA256sum: 0d69761a243b13bb985a3a5c28d589c091610e37b3d637735525860fecbfbb1a
+Size: 6151
+SHA256sum: 4869646db2c08b8af634b5a810219f6343445bedf97308585e02b0cf729f5204
 Description:  An ICMPv6 neighbour discovery tools
 
 Package: netifd
@@ -2001,19 +1985,19 @@ Section: QCA
 Architecture: aarch64_cortex-a53
 Installed-Size: 1198080
 Filename: qca-ssdk-shell_12.5.2024.12.17~a2b7be2-r4_aarch64_cortex-a53.ipk
-Size: 252366
-SHA256sum: fafed56f93c66860932e1ca7bcec30d9349d5c93e35b6ec6dabc7e83002ab7e9
+Size: 252333
+SHA256sum: a6981e62ca4f79780f0554f5c8c474218086228b6e5070d4f80bfc7228b74fda
 Description:  Shell application for QCA SSDK
 
 Package: qfirehose
-Version: 1.4.21-r2
+Version: 1.4.21-r1
 Depends: libc
 Section: utils
 Architecture: aarch64_cortex-a53
 Installed-Size: 143360
-Filename: qfirehose_1.4.21-r2_aarch64_cortex-a53.ipk
-Size: 49455
-SHA256sum: e2d9539555fe5d746f7b6525dbda58d7f70d1538249ed61ad4b8427f90921d81
+Filename: qfirehose_1.4.21-r1_aarch64_cortex-a53.ipk
+Size: 49001
+SHA256sum: 5c9deec417a9426781aef562020ea992e07deab96aeb428536a8a8b36d443b29
 Description:  Utility that is able to flash firmwares on Quectel's modems.
  Usage: qfirehose -f FW_PATH
  
@@ -2125,8 +2109,8 @@ URL: https://github.com/shadowsocks/shadowsocks-rust
 Architecture: aarch64_cortex-a53
 Installed-Size: 7362560
 Filename: shadowsocks-rust-sslocal_1.24.0-r1_aarch64_cortex-a53.ipk
-Size: 3609237
-SHA256sum: 7700b10536428ad553d0fd2a531fdc13091314d10421a7b3081e6fa27e629dc3
+Size: 3608937
+SHA256sum: cab9f0ed6bd8f3653e183db13cb123d142740fdc3eedeb965d547a6560436008
 Description:  shadowsocks-rust sslocal
 
 Package: shadowsocksr-libev-ssr-local
